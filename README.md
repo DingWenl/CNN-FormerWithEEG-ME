@@ -1,5 +1,5 @@
 # CNN-Former model with EEG-ME for SSVEP classification
-Here are the codes of the CNN-Former with EEG-ME in the paper "[A Novel Data Augmentation Approach Using Mask Encoding for Deep Learning-Based Asynchronous SSVEP-BCI].
+Here are the codes of the CNN-Former with EEG-ME in the paper "A Novel Data Augmentation Approach Using Mask Encoding for Deep Learning-Based Asynchronous SSVEP-BCI“，whhich is accept by the IEEE Transactions on Neural Systems & Rehabilitation Engineering.
 ## The core code of EEG-ME in data_generator.py
 1. segment = list(range(int(win_train-mask_rate*win_train)))
 2. r_m = sample(segment, 1)[0]
