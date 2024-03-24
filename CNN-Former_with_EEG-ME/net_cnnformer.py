@@ -93,7 +93,7 @@ def EncoderLayer(x, d_model, num_heads,dff,rate,num):
     return out2
 
 def conv1D_block_(x, k_size, stride, out_channel, drop_out,name):
-    x = Dropout(drop_out1)(x)
+    x = Dropout(drop_out)(x)
     x = Conv1D(out_channel,kernel_size = k_size,strides = stride,padding = 'same',name = name)(x)
     x = BatchNormalization(axis = -1,momentum = 0.99,epsilon=0.001)(x)
     x = Activation(activation)(x)
