@@ -4,7 +4,8 @@ Here are the codes of the CNN-Former with EEG-ME in the paper ["A Novel Data Aug
 1. segment = list(range(int(win_train-mask_rate*win_train)))
 2. r_m = sample(segment, 1)[0]
 3. x_train[:,:,r_m:int(r_m+mask_rate*win_train),:] = 0
-4. where "r_m" denotes the start point of the mask window, "win_train" denotes the data length of the time window of training  samples, "mask_rate" denotes the mask ratio of the training samples, and "x_train" denotes the mini-batch training samples 
+4. where "r_m" denotes the start point of the mask window, "win_train" denotes the data length of the time window of training  samples, "mask_rate" denotes the mask ratio of the training samples, and "x_train" denotes the mini-batch training samples.
+5. Note: If you intend to utilize EEG-ME for synchronous analysis algorithms, the random range for the starting point of the mask window will vary. It is advisable to leave the initial 30% of the data unmasked, as the synchronous analysis algorithm relies on leveraging the initial phase information. That is, segment = list(range(int(win_train\*0.3), int(win_train-mask_rate*win_train))).
 
 
 ## The related version information
