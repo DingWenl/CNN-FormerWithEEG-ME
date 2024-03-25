@@ -12,7 +12,6 @@ drop_out3 = 0.95
 channel = 9
 out_channel = 8
 out_channel2 = 128
-out_channel3 = out_channel2//4
 activation = 'elu'
 
 def get_angles(pos, i, d_model):
