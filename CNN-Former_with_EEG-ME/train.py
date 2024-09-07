@@ -102,7 +102,7 @@ if __name__ == '__main__':
             # transfer time to frame
             win_train = int(fs*t_train)
             for mask_rate in mask_rate_list:
-            # the traing data is randomly divided in the traning dataset and validation set according to the radio of 9:1
+                # leave one-block out training
                 for block_n in range(6):
                     train_list = list(range(6))
                     val_list = [block_n]
