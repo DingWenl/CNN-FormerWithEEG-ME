@@ -139,15 +139,11 @@ if __name__ == '__main__':
                     x_train,y_train = datagenerator(batchsize,data1, data2, data3, win_train, channel,test_list)
                     a, b = 0, 0
                     y_pred = model.predict(np.array(x_train))
-                    true, pred = [], []
-                    y_true = y_train
                     # Calculating the accuracy of current time
                     for i in range (batchsize):
                         y_pred_ = np.argmax(y_pred[i])
-                        pred.append(y_pred_)
-                        y_true1  = np.argmax(y_train[i])
-                        true.append(y_true1)
-                        if y_true1 == y_pred_:
+                        y_true_  = np.argmax(y_train[i])
+                        if y_true_ == y_pred_:
                             a += 1
                         else:
                             b+= 1
