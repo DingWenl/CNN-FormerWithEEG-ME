@@ -9,11 +9,11 @@ Here are the codes of the CNN-Former with EEG-ME in the paper ["A Novel Data Aug
 
 
 ## The related version information
-1. Python == 3.7.0
-2. Keras-gpu == 2.3.1
-3. tensorflow-gpu == 2.1.0
-4. scipy == 1.5.2
-5. numpy == 1.19.2
+1. Python == 3.9.13
+2. Keras-gpu == 2.6.0
+3. tensorflow-gpu == 2.6.0
+4. scipy == 1.9.3
+5. numpy == 1.19.3
 ## Training CNN-Former with EEG-ME for the benchmark dataset
 1. Download the code.
 2. Download the [benchmark dataset](http://bci.med.tsinghua.edu.cn/download.html) and its [paper](https://ieeexplore.ieee.org/abstract/document/7740878).
